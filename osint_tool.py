@@ -488,7 +488,7 @@ def main():
         
         elif choice=="4":
             session_user = input(f"{Colors.OKCYAN}[+] Masukkan username IG session: {Colors.END}").strip()
-            session_file = input(f"{Colors.OKCYAN}[+] Masukkan path session file (/home/cby032/.config/instaloader/session-ethresyx): {Colors.END}").strip()
+            session_file = input(f"{Colors.OKCYAN}[+] Masukkan path session file (/home/cby032/.config/instaloader/session-(akun_login)): {Colors.END}").strip()
             target_username = input(f"{Colors.OKCYAN}[+] Masukkan Instagram Username target: {Colors.END}").strip() 
             
             profile = scrape_instagram_logged(target_username, session_file, session_user)
