@@ -3,20 +3,26 @@
 **Versi:** v1.0 (2025)
 **Dibuat oleh:** [Finyra Software Design Studio](https://github.com/finyra)
 
+---
+
 ## 📌 Deskripsi
 
-OSINT Social Media Finder adalah alat **Open Source Intelligence (OSINT)** untuk menemukan profil media sosial berdasarkan **email** atau **username**.
+**OSINT Social Media Finder** adalah alat **Open Source Intelligence (OSINT)** untuk menemukan profil media sosial berdasarkan **email** atau **username**.
+
 Fitur utama:
-✅ Pencarian otomatis di berbagai platform sosial media
-✅ Dukungan fallback (Google / DuckDuckGo) jika permintaan diblokir
-✅ Scraping data profil (nama, bio, lokasi, email, nomor telepon)
-✅ Ekstraksi kontak dari halaman profil
-✅ Mode **Instagram OSINT** dengan login session untuk data lebih detail
-✅ Output dalam format **JSON**, **CSV**, dan **HTML Report**
+
+* ✅ Pencarian otomatis di berbagai platform sosial media
+* ✅ Dukungan fallback (Google / DuckDuckGo) jika permintaan diblokir
+* ✅ Scraping data profil (nama, bio, lokasi, email, nomor telepon)
+* ✅ Ekstraksi kontak dari halaman profil
+* ✅ Mode **Instagram OSINT** dengan login session untuk data lebih detail
+* ✅ Output dalam format **JSON**, **CSV**, dan **HTML Report**
 
 ---
-## Gui Tampilan 
 
+## 🖥️ Tampilan GUI CLI
+
+```
   /$$$$$$   /$$$$$$  /$$$$$$ /$$   /$$ /$$$$$$$$       /$$    /$$   /$$  
  /$$__  $$ /$$__  $$|_  $$_/| $$$ | $$|__  $$__/      | $$   | $$ /$$$$  
 | $$  \ $$| $$  \__/  | $$  | $$$$| $$   | $$         | $$   | $$|_  $$  
@@ -38,22 +44,23 @@ Fitur utama:
 [5] ❌ Exit
 --------------------------------------------------
 [?] Pilih opsi:
+```
 
 ---
 
 ## ⚙️ Fitur Utama
 
-* **Multi-threaded scanning** (cepat & efisien)
-* **Instagram Advanced Mode** (menggunakan Instaloader session)
-* **Deteksi lokasi & kontak**
-* **Export hasil ke JSON, CSV, dan HTML report**
-* **Fallback Search** jika permintaan diblokir (Captcha / HTTP 429)
+* Multi-threaded scanning (cepat & efisien)
+* Instagram Advanced Mode (menggunakan Instaloader session)
+* Deteksi lokasi & kontak
+* Export hasil ke **JSON**, **CSV**, dan **HTML report**
+* Fallback search jika permintaan diblokir (Captcha / HTTP 429)
 
 ---
 
 ## 🖥️ Cara Install
 
-Pastikan Python 3.8+ sudah terpasang.
+Pastikan **Python 3.8+** sudah terpasang.
 Clone repository ini:
 
 ```bash
@@ -66,12 +73,6 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
-### **Requirements:**
-
-* `requests`
-* `beautifulsoup4`
-* `instaloader`
 
 Jika belum ada file `requirements.txt`, buat dengan isi berikut:
 
@@ -101,43 +102,43 @@ Menu utama:
 [5] ❌ Exit
 ```
 
-### **Contoh Penggunaan**
+### Contoh Penggunaan
 
-1. **Scan berdasarkan email:**
+1. **Scan berdasarkan email**
 
-   ```
-   Pilih opsi: 1
-   Masukkan Email: example@gmail.com
-   Jumlah threads [6]: 6
-   ```
+```
+Pilih opsi: 1
+Masukkan Email: example@gmail.com
+Jumlah threads [6]: 6
+```
 
-   Hasil akan disimpan ke folder **output/**.
+Hasil disimpan di folder **output/**.
 
-2. **Scan berdasarkan username:**
+2. **Scan berdasarkan username**
 
-   ```
-   Pilih opsi: 2
-   Masukkan Username: johndoe
-   ```
+```
+Pilih opsi: 2
+Masukkan Username: johndoe
+```
 
-3. **Instagram OSINT (Advanced):**
+3. **Instagram OSINT (Advanced)**
 
-   ```
-   Pilih opsi: 4
-   Masukkan username IG session: akun_login
-   Masukkan path session file: /home/user/.config/instaloader/session-akun_login
-   Masukkan Instagram Username target: target_user
-   ```
+```
+Pilih opsi: 4
+Masukkan username IG session: akun_login
+Masukkan path session file: /home/user/.config/instaloader/session-akun_login
+Masukkan Instagram Username target: target_user
+```
 
 ---
 
 ## 📂 Output
 
-Hasil scan akan tersimpan di folder **output/** dalam format:
+Hasil scan tersimpan di folder **output/** dalam format:
 
 * `JSON` → untuk pemrosesan data
 * `CSV` → untuk spreadsheet
-* `HTML` → untuk laporan yang rapi
+* `HTML` → untuk laporan rapi
 
 Contoh nama file:
 
@@ -151,13 +152,13 @@ instagram_target_1735373812.html
 
 ## 🔒 Catatan Penting
 
-* Gunakan secara etis dan sesuai hukum yang berlaku.
-* Jangan gunakan untuk kejahatan siber atau pelanggaran privasi.
-* Aplikasi ini hanya untuk **OSINT & Penetration Testing dengan izin**.
+* Gunakan secara **etis** dan sesuai hukum yang berlaku
+* Jangan gunakan untuk **kejahatan siber** atau pelanggaran privasi
+* Aplikasi ini hanya untuk **OSINT & Penetration Testing dengan izin**
 
 ---
 
-## 🛠️ To-Do (Pengembangan)
+## 🛠️ Rencana Pengembangan
 
 * [ ] Mode CLI → Mode Web Dashboard
 * [ ] Dukungan Proxy & Rotasi User-Agent lebih kompleks
@@ -177,3 +178,5 @@ Jika ingin berkontribusi, silakan fork repository ini dan buat **Pull Request**.
 
 Proyek ini dirilis di bawah lisensi **MIT**.
 Silakan digunakan, diubah, dan didistribusikan dengan mencantumkan kredit.
+
+Apakah mau saya buatkan versi itu juga?
